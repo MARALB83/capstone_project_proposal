@@ -20,7 +20,7 @@ The demand for the ad is expressed as a probability (named *deal_probability* in
 <p style='text-align: justify;'>The dataset was provided by Avito (through Kaggle) and it represents classified advertisements along with the images (when available) of the products/services being advertised:</p>
 
 * **_train.csv_**: Contains 1,503,424 ads with the following columns:  
-![column_desc](columns_desc.png)  
+![column_desc](./Images/columns_desc.PNG?raw=true)  
 Source: https://www.kaggle.com/c/avito-demand-prediction/data
 
 <p style='text-align: justify;'>The approach taken for this capstone project is to further divide the _train.csv_ file into train and testing subsets. Although Avito provides additional records assigned to the testing subset in the Kaggle challenge, they do not have the target/dependent variable that would make it possible to evaluate machine learning models. The Kaggle challenge sponsor holds back the *deal_probability* column from the testing group so that it remains a competitive and truly out-of-sample exercise.</p>
@@ -53,18 +53,18 @@ In this approach, multiple models (eg. linear regression, Lasso regression, Ridg
 As both classification and regression-based approaches are going to be tested, there is going to be one metric for each problem type.
 
 * **For classification-based models**: The evaluation metric is the F1-Score as it balances precision and recall. The equation is given by:  
-![f1_score](f1_Score.png)   
+![f1_score](./Images/f1_Score.PNG?raw=true)   
 Source: https://en.wikipedia.org/wiki/F1_score
 
 * **For regression-based models**: <p style='text-align: justify;'>The evaluation metric is the root mean squared error (RMSE) which is a quantitative way to express the average deviation of the predicted deal probability from the actual value. The equation is given by:</p>
-![rmse](rmse.png)  
+![rmse](./Images/rmse.PNG?raw=true)  
 Source: https://www.kaggle.com/c/avito-demand-prediction#evaluation
 
 ### Project Design
 <p style='text-align: justify;'>
 At a high level, the project workflow can be depicted in the following diagram:</p>
 
-![workflow](workflow.png)  
+![workflow](./Images/workflow.PNG?raw=true)  
 
 * **I. Exploratory data analysis**: <p style='text-align: justify;'>distribution of target variable (*deal_probability*); distribution of available features; relationship between available features and target variable.</p>
 * **II. Feature engineering**: <p style='text-align: justify;'>translation of numerical data into the same magnitude (ZScoring) vs. original values; natural language processing of text data rangin from simple word/punctuation count to feature extraction through Tf-Idf and dimensionality reduction; processing of imaging data to identify unambiguous high-quality pictures using neural networks.</p>
