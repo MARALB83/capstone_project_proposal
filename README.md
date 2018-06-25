@@ -53,7 +53,7 @@ In this approach, multiple models (eg. linear regression, Lasso regression, Ridg
 As both classification and regression-based approaches are going to be tested, there is going to be one metric for each problem type.
 
 * **For classification-based models**: The evaluation metric is the F1-Score as it balances precision and recall. The equation is given by:  
-![f1_score](./Images/f1_Score.PNG?raw=true)   
+![f1_score](./Images/f1_score.PNG?raw=true)   
 Source: https://en.wikipedia.org/wiki/F1_score
 
 * **For regression-based models**: <p style='text-align: justify;'>The evaluation metric is the root mean squared error (RMSE) which is a quantitative way to express the average deviation of the predicted deal probability from the actual value. The equation is given by:</p>
@@ -64,7 +64,7 @@ Source: https://www.kaggle.com/c/avito-demand-prediction#evaluation
 <p style='text-align: justify;'>
 At a high level, the project workflow can be depicted in the following diagram:</p>
 
-![workflow](./Images/workflow.PNG?raw=true)  
+![workflow](./Images/workflow.png?raw=true)  
 
 * **I. Exploratory data analysis**: <p style='text-align: justify;'>distribution of target variable (*deal_probability*); distribution of available features; relationship between available features and target variable.</p>
 * **II. Feature engineering**: <p style='text-align: justify;'>translation of numerical data into the same magnitude (ZScoring) vs. original values; natural language processing of text data rangin from simple word/punctuation count to feature extraction through Tf-Idf and dimensionality reduction; processing of imaging data to identify unambiguous high-quality pictures using neural networks.</p>
